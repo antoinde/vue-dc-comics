@@ -6,16 +6,7 @@
             </div>
             <div class="right">
                 <ul>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
+                    <li v-for="link in links" :key="link">{{link}}</li>
                 </ul>
             </div>
         </div>
@@ -25,7 +16,9 @@
 
 <script>
 export default {
-    name: 'dc_header'
+    name: 'dc_header',
+    data() {
+  }
 }
 </script>
 

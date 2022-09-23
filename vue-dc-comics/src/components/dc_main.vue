@@ -57,6 +57,7 @@ export default {
 <style scoped>
     .main {
         background-image: url('../assets/img/footer-bg.jpg');
+        background-size: auto;
     }
     .container {
         max-width: 1200px;
@@ -74,9 +75,7 @@ export default {
         display: flex;
     }
     .content-right img {
-        position: relative;
-        width: 90%;
-        top: -70px;
+        transform: translateY(-20%);
     }
     .column {
         width: calc(100% / 3);

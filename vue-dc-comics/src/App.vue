@@ -23,7 +23,12 @@ export default {
     blue_nav,
     dc_main,
     dc_footer
+  },
+  data() {
+    links: ['CHARACTERS','COMICS','MOVIES', 'TV', 'GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS', 'SHOP']
+
   }
+  
 }
 </script>
 

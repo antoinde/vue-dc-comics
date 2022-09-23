@@ -29,6 +29,9 @@ export default {
 <style scoped>
     .dc_footer{
         background-color: #303030;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
     }
     .container {
         max-width: 1200px;
