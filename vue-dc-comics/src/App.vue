@@ -25,7 +25,7 @@ export default {
     dc_footer
   },
   data() {
-    links: ['CHARACTERS','COMICS','MOVIES', 'TV', 'GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS', 'SHOP']
+    
 
   }
   
@@ -38,5 +38,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>

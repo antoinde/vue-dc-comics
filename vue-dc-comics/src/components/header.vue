@@ -6,7 +6,7 @@
             </div>
             <div class="right">
                 <ul>
-                    <li v-for="link in links" :key="link">{{link}}</li>
+                    <li v-for="(link, index) in links" :key="link">{{link[index]}}</li>
                 </ul>
             </div>
         </div>
@@ -18,6 +18,10 @@
 export default {
     name: 'dc_header',
     data() {
+        return {
+      links: ['CHARACTERS','COMICS','MOVIES', 'TV', 'GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS', 'SHOP']
+
+    }
   }
 }
 </script>
