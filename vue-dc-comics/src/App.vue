@@ -23,16 +23,13 @@ export default {
     blue_nav,
     dc_main,
     dc_footer
-  },
-  data() {
-    
-
   }
   
 }
 </script>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 body {
   // reset css
   box-sizing: border-box;

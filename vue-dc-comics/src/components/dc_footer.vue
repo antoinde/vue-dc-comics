@@ -8,10 +8,31 @@
                 <span class="follow">FOLLOW US</span>
                 <span>
                     <ul>
-                        <li>icon</li>
-                        <li>icon</li>
-                        <li>icon</li>
-                        <li>icon</li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-periscope.png" alt="periscope">
+                            </a>
+                        </li>
                     </ul>
                 </span>
                 
@@ -29,8 +50,6 @@ export default {
 <style scoped>
     .dc_footer{
         background-color: #303030;
-        position: absolute;
-        bottom: 0px;
         width: 100%;
     }
     .container {

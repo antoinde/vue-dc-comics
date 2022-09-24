@@ -6,7 +6,9 @@
             </div>
             <div class="right">
                 <ul>
-                    <li v-for="(link, index) in links" :key="link">{{link[index]}}</li>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a href="#"> {{link}} </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -17,19 +19,20 @@
 <script>
 export default {
     name: 'dc_header',
-    data() {
+    data() { //lo uso nel componente stesso
         return {
-      links: ['CHARACTERS','COMICS','MOVIES', 'TV', 'GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS', 'SHOP']
-
+         links: ['CHARACTERS','COMICS','MOVIES', 'TV', 'GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS', 'SHOP']
+        }
     }
-  }
 }
 </script>
 
 <style scoped>
     .header {
-        border-bottom: 5px solid black;
         background-color: #ffffff;
+        font-family: 'Oswald', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 900;
     }
     .container {
         max-width: 1200px;
@@ -48,6 +51,7 @@ export default {
         display: flex;
         list-style-type: none;
         column-gap: 1.5rem;
+        height: 93%;
     }
     li {
         border-bottom: 4px solid #fff;
@@ -55,5 +59,8 @@ export default {
     li:hover {
         border-color: #0282f9;
     }
-    
+    a{
+        text-decoration: none;
+        color: black;
+    }
 </style>

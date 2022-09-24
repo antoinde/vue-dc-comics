@@ -2,11 +2,15 @@
     <div class="blue_nav">
         <div class="container">
             <ul>
-                <li><span>logo </span><span>item</span></li>
-                <li><span>logo </span><span>item</span></li>
-                <li><span>logo </span><span>item</span></li>
-                <li><span>logo </span><span>item</span></li>
-                <li><span>logo </span><span>item</span></li>
+                <li v-for="(element, index) in shop" :key="index">
+                    <a href="#">
+                        <div class="img-container">
+                            <img :src="getImg(index)" alt="">
+                        </div>
+
+                        <div> {{ element.text }} </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -14,7 +18,42 @@
 
 <script>
 export default {
-    name: 'blue_nav'
+    name: 'blue_nav',
+    data() {
+        return {
+            shop: [
+                {
+                    img: 'buy-comics-digital-comics.png',
+                    text: 'DIGITAL COMICS'
+                },
+                {
+                    img: 'buy-comics-merchandise.png',
+                    text: 'DC MERCHANDISE'
+                },
+                {
+                    img: 'buy-comics-shop-locator.png',
+                    text: 'SUBSCRIPTION'
+                },
+                {
+                    img: 'buy-comics-subscriptions.png',
+                    text: 'COMIC SHOP LOCATOR'
+                },
+                {
+                    img: 'buy-dc-power-visa.png',
+                    text: 'DC POWER VISA'
+                }
+                
+            ]
+        }
+    },
+    methods: {
+        getImg(index) {
+            const imageLink = "../assets/img/" + this.shop[index]["img"];
+            console.log(imageLink);
+            return imageLink;
+        }
+    }
+    
 }
 </script>
 
@@ -25,13 +64,31 @@ export default {
     .container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 15px 0;
+        padding: 20px 0;
         color: #fff;
     }
     ul {
         display: flex;
         justify-content: space-around;
         list-style-type: none;
+        column-gap: 20px;
+    }
+    
+    li a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+    li:hover {
+        color: black;
+    }
+    img {
+        margin-right: 15px;
+        height: 100%;
+    }
+    .img-container {
+        height: 4rem;
     }
     
 </style>
