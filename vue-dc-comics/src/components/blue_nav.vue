@@ -48,7 +48,7 @@ export default {
     },
     methods: {
         getImg(index) {
-            const imageLink = "../assets/img/" + this.shop[index]["img"];
+            const imageLink = '../assets/img/' + this.shop[index].img;
             console.log(imageLink);
             return imageLink;
         }
@@ -77,8 +77,6 @@ export default {
     li a{
         display: flex;
         align-items: center;
-        text-decoration: none;
-        color: white;
     }
     li:hover {
         color: black;

@@ -56,8 +56,8 @@ export default {
     }
     .container {
         max-width: 1200px;
+        height: 400px;
         margin: 0 auto;
-        padding: 15px 0;
         color: #797979;
         display: flex;
         justify-content: space-between;
@@ -70,9 +70,13 @@ export default {
         width: calc(100% / 3);
         display: flex;
     }
+    .content-right {
+        overflow: hidden;
+        height: 100%;
+    }
     .content-right img {
-        width: 80%;
-        transform: translateY(-20%);
+        position: relative;
+        top: -90px;
     }
     .column {
         width: calc(100% / 3);
@@ -82,11 +86,11 @@ export default {
         padding: 5px 0;
     }
     li {
-        margin: 8px 0px;
+        margin: 6px 0px;
+        font-size: 0.8rem;
     }
     a {
-        text-decoration: none;
-        color: #797979;
+        color: #9c9c9c;
     }
     a:hover{
         filter: brightness(1.8);

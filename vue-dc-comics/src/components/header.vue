@@ -51,16 +51,16 @@ export default {
         display: flex;
         list-style-type: none;
         column-gap: 1.5rem;
-        height: 93%;
+        height: 85%;
     }
     li {
         border-bottom: 4px solid #fff;
     }
     li:hover {
         border-color: #0282f9;
+        transform: scale(120%);
     }
     a{
-        text-decoration: none;
         color: black;
     }
 </style>

@@ -55,13 +55,10 @@ export default {
     .container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 15px 0;
+        padding: 30px 0;
         color: #fff;
         display: flex;
         justify-content: space-between;
-    }
-    .left {
-        
     }
     .right {
         display: flex;
@@ -91,5 +88,11 @@ export default {
     .follow {
         margin: 0 15px;
         color: #0282f9;
+    }
+    a {
+        filter: brightness(0.8);
+    }
+    a:hover {
+        filter: brightness(1.8);
     }
 </style>
